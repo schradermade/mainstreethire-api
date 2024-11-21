@@ -11,7 +11,7 @@
   "routes": [
     {
       "src": "/favicon.ico",
-      "dest": "/dist/favicon.ico"
+      "dest": "/public/favicon.ico"
     },
     {
       "src": "/(.*)",
