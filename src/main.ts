@@ -20,14 +20,14 @@ async function bootstrap() {
   app.enableCors();
   console.log('__dirname:', __dirname);
 
-  const port = process.env.PORT || 3001;
+  // const port = process.env.PORT || 3001;
 
-  await app.listen(port);
+  // await app.listen(port);
 
   // Initialize the app without binding to a specific port
   await app.init();
 
-  console.log(`Application listening on port ${port}`);
+  console.log(`Application listening on port`);
 }
 
 // Start the app
