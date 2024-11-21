@@ -17,8 +17,8 @@ export class UserService {
     return this.userRepository.save(newUser);
   }
 
-  findAll() {
-    return `This action returns all users`;
+  async findAll() {
+    return await this.userRepository.find();
   }
 
   findOne(id: number) {

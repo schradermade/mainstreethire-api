@@ -25,8 +25,8 @@ let UserService = class UserService {
         const newUser = this.userRepository.create(createUserDto);
         return this.userRepository.save(newUser);
     }
-    findAll() {
-        return `This action returns all users`;
+    async findAll() {
+        return await this.userRepository.find();
     }
     findOne(id) {
         return `This action returns a #${id} user`;

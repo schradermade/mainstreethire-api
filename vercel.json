@@ -2,7 +2,6 @@
   "version": 2,
   "installCommand": "npm install",
   "buildCommand": "npm run build",
-  "outputDirectory": "dist",
   "builds": [
     {
       "src": "dist/main.js",
@@ -12,12 +11,11 @@
   "routes": [
     {
       "src": "/favicon.ico",
-      "dest": "/public/favicon.ico"
+      "dest": "/dist/favicon.ico"
     },
     {
       "src": "/(.*)",
-      "dest": "dist/main.js",
-      "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"]
+      "dest": "dist/main.js"
     }
   ]
 }
