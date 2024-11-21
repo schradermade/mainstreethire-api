@@ -20,6 +20,8 @@ async function bootstrap() {
   app.enableCors();
   console.log('__dirname:', __dirname);
 
+  await app.listen(3001);
+
   // Initialize the app without binding to a specific port
   await app.init();
 
