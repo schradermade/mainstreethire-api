@@ -14,7 +14,7 @@ async function bootstrap() {
     const port = process.env.PORT || 3001;
     await app.listen(port);
     await app.init();
-    console.log(`Application initialized and ready to handle requests`);
+    console.log(`Application listening on port ${port}`);
 }
 bootstrap();
 exports.default = server;

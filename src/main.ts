@@ -27,7 +27,7 @@ async function bootstrap() {
   // Initialize the app without binding to a specific port
   await app.init();
 
-  console.log(`Application initialized and ready to handle requests`);
+  console.log(`Application listening on port ${port}`);
 }
 
 // Start the app
