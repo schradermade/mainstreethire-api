@@ -27,6 +27,7 @@
     "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^10.0.0",
     "@nestjs/typeorm": "^10.0.2",
+    "@vercel/node": "^3.2.25",
     "mysql2": "^3.11.4",
     "pg": "^8.13.1",
     "reflect-metadata": "^0.2.0",
