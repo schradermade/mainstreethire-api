@@ -11,10 +11,8 @@ async function bootstrap() {
     app.useStaticAssets((0, path_1.join)(__dirname, '..', 'public'));
     app.enableCors();
     console.log('__dirname:', __dirname);
-    const port = process.env.PORT || 3001;
-    await app.listen(port);
     await app.init();
-    console.log(`Application listening on port ${port}`);
+    console.log(`App listening on port`);
 }
 bootstrap();
 exports.default = server;
